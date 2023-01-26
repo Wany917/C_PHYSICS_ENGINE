@@ -43,14 +43,14 @@ int main(int argc, char* args[]){
             }
 
             // Boucle principale
-            bool done = false;
+            int done = 0;
             while(!done){
                 // Gérer les événements
                 // Tester la touche q
                 SDL_Event event;
                 while (SDL_PollEvent(&event)){
                     if (event.type == SDL_QUIT){
-                        done = true;
+                        done = 1;
                     }
                 }
 
