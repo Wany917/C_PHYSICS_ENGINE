@@ -1,4 +1,5 @@
 #include <SDL2/SDL.h>
+#include <SDL2/SDL2_gfxPrimitives.h>
 
 const int WIDTH = 800;
 const int HEIGHT = 600;
@@ -78,6 +79,7 @@ int main(int argc, char* argv[]) {
             circle.xVel = -circle.xVel;
             circle.yVel = -circle.yVel;
         }
+
 
         // Effacement de l'écran
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
