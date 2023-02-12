@@ -5,7 +5,7 @@ LDLIBS=-lSDL2_gfx -lSDL2
 
 all: runmac
 
-runmac: engine_v3.c
+runmac: engine.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 .PHONY: clean

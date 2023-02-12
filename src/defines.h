@@ -2,7 +2,7 @@
 #define DEFINES_H
 
 // Coordonneés x_y de ma windows
-#define x SDL_WINDOWPOS_UNDEFINED
-#define y SDL_WINDOWPOS_UNDEFINED
+#define x 
+#define y 
 
 #endif // DEFINES_H

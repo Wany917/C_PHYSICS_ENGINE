@@ -1,11 +1,12 @@
 #include <SDL2/SDL.h>
 #include <math.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #define WIDTH 640
 #define HEIGHT 480
 #define RADIUS 50
-#define SPEED 2
+#define SPEED 1
 
 typedef struct Shape
 {
@@ -91,6 +92,7 @@ int main()
             {
                 running = false;
             }
+
             else if (event.type == SDL_MOUSEBUTTONDOWN)
             {
                 int x = event.button.x;
@@ -103,16 +105,24 @@ int main()
                 shape.h = RADIUS;
                 shape.dx = SPEED;
                 shape.dy = SPEED;
-                shape.is_circle = true;
+                shape.is_circle = shape.is_circle;
                 shape.color = (SDL_Color){0, 0, 255, 255};
 
                 shapes[shape_count++] = shape;
+
+                shape.is_circle = !shape.is_circle;
             }
+
             else if (event.type == SDL_KEYDOWN)
             {
                 if (event.key.keysym.sym == SDLK_r)
                 {
                     shape_count = 0;
+                }
+                if (event.key.keysym.sym == SDLK_q)
+                {
+                    shape_count = 0;
+                    goto quit;
                 }
             }
         }
@@ -144,6 +154,7 @@ int main()
         SDL_RenderPresent(renderer);
     }
 
+quit:
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
