@@ -5,6 +5,7 @@ Ce programme est un simulateur graphique de physique
 # Conditions
 
 Avoir un système capable d'exécuter du C 
+
 Avoir SDL2 installé sur ce même système
 
 # Utilisation
@@ -12,7 +13,9 @@ Avoir SDL2 installé sur ce même système
 L'utilisation de ce programme est assez simple :
 
 Chaque clic dans la fenêtre permet d'ajouter une forme
+
 La touche Q du clavier permet de quitter le programme
+
 La touche R permet de supprimer toutes les forme présentes dans la fenêtre
 
 # Description 
