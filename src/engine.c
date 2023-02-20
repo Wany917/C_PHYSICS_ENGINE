@@ -7,6 +7,9 @@
 #include "../includes/struct.h"
 #include "../includes/functions.h"
 
+Shape shapes[100];
+int shape_count = 0;
+
 int main()
 {
     SDL_Init(SDL_INIT_VIDEO);
