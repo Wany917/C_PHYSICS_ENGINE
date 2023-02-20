@@ -3,12 +3,12 @@ CFLAGS=-Wall -Wextra -Wpedantic -I/opt/homebrew/Cellar/sdl2_gfx/1.0.4/include -I
 LDFLAGS=-L/opt/homebrew/Cellar/sdl2_gfx/1.0.4/lib -L/opt/homebrew/lib
 LDLIBS=-lSDL2_gfx -lSDL2 -lm -ldl
 
-all: runmac
+all: exe
 
-runmac: engine.c
+exe: engine.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 .PHONY: clean
 
 clean:
-	rm -f runmac
+	rm -f exe
