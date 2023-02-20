@@ -11,10 +11,14 @@ Avoir SDL2 installé sur ce même système
 # Lancement
 
 Pour lancer ce programme il faut suivre ces 4 étapes :
-    + Télécharger ou cloner ce repo sur votre ordinateur
-    + Ouvrir un terminal et se rendre dans le dossier du programme
-    + Faire la commande make pour compiler le programme
-    + Taper ./exe pour le lancer
+
+    Télécharger ou cloner ce repo sur votre ordinateur
+
+    Ouvrir un terminal et se rendre dans le dossier du programme
+    
+    Faire la commande make pour compiler le programme
+    
+    Taper ./exe pour le lancer
 
 # Utilisation
 
