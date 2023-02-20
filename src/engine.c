@@ -3,9 +3,9 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#include <defines.h>
-#include <struct.h>
-#include <functions.h>
+#include "../includes/defines.h"
+#include "../includes/struct.h"
+#include "../includes/functions.h"
 
 int main()
 {
