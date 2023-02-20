@@ -2,6 +2,10 @@
 
 Ce programme est un simulateur graphique de physique
 
+![image](https://user-images.githubusercontent.com/98949412/220198779-27f32828-f2d4-4206-a932-b1573cc50066.png)
+
+Aperçu du programme en fonctionnement
+
 # Conditions
 
 Avoir un système capable d'exécuter du C 
