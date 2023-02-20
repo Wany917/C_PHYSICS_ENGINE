@@ -8,6 +8,16 @@ Avoir un système capable d'exécuter du C
 
 Avoir SDL2 installé sur ce même système
 
+# Lancement
+
+Pour exécuter le programme, il faut faire ces deux commandes à la suite dans le dossier du programme :
+
+make
+
+./exe
+
+Suite à cela, le programme s'exécute
+
 # Utilisation
 
 L'utilisation de ce programme est assez simple :
