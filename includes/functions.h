@@ -1,3 +1,8 @@
+#include <SDL2/SDL.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+
 bool check_collision(Shape a, Shape b)
 {
     int x1 = a.x + a.w / 2;
