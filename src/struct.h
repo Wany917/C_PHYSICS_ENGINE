@@ -10,5 +10,7 @@ typedef struct Shape
     SDL_Color color;
 } Shape;
 
+// Shape Size
 Shape shapes[100];
+// Shape count
 int shape_count = 0;

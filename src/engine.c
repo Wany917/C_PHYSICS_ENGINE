@@ -3,15 +3,18 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+
 #include "defines.h"
 #include "struct.h"
 #include "functions.h"
 
 int main()
 {
+    // Init SDL video
     SDL_Init(SDL_INIT_VIDEO);
 
-    SDL_Window *window = SDL_CreateWindow("Formes interactives", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, SDL_WINDOW_SHOWN);
+    // Create window
+    SDL_Window *window = SDL_CreateWindow("PHYSICS_ENGINE", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
     bool running = true;
@@ -31,22 +34,29 @@ int main()
                 int y = event.button.y;
 
                 Shape shape;
+                // Initialize the shape position (x,y)
                 shape.x = x - RADIUS / 2;
                 shape.y = y - RADIUS / 2;
+                // initialize the shape width and height
                 shape.w = RADIUS;
                 shape.h = RADIUS;
+                // initialize the shape speed horizontal and vertical who is always constant
                 shape.dx = SPEED;
                 shape.dy = SPEED;
+                // I define if the shape is a circle by default
                 shape.is_circle = shape.is_circle;
                 shape.color = (SDL_Color){0, 0, 255, 255};
 
                 shapes[shape_count++] = shape;
 
+                // To alternate my shape creation between square and rectangle I just have to pass this boolean to false
                 shape.is_circle = !shape.is_circle;
             }
 
+
+            // Condition who listen our keyboard events
             else if (event.type == SDL_KEYDOWN)
-            {
+            {   
                 if (event.key.keysym.sym == SDLK_r)
                 {
                     shape_count = 0;
@@ -62,6 +72,8 @@ int main()
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         SDL_RenderClear(renderer);
 
+
+        // Constantly update the shape mouv & draw the shape
         for (int i = 0; i < shape_count; i++)
         {
             for (int j = i + 1; j < shape_count; j++)
