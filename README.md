@@ -1,41 +1,34 @@
 # C_PHYSICS_ENGINE
 
-Ce programme est un simulateur graphique de physique
+This program is a graphical physics simulator
 
 ![image](https://user-images.githubusercontent.com/98949412/220198779-27f32828-f2d4-4206-a932-b1573cc50066.png)
 
-Aperçu du programme en fonctionnement
+Overview of the program in operation
 
 # Conditions
 
-Avoir un système capable d'exécuter du C 
+    Have a system capable of running `C`
+    Have SDL2 installed on the system
 
-Avoir SDL2 installé sur ce même système
+# Launch
 
-# Lancement
+To launch this program you have to follow these 4 steps:
 
-Pour lancer ce programme il faut suivre ces 4 étapes :
+    Download or clone this repo on your computer
+    Open a terminal and go to the program folder
+    Use the make command to compile the program
+    Type ./exe to launch it
 
-    Télécharger ou cloner ce repo sur votre ordinateur
+# Use
 
-    Ouvrir un terminal et se rendre dans le dossier du programme
-    
-    Faire la commande make pour compiler le programme
-    
-    Taper ./exe pour le lancer
-
-# Utilisation
-
-L'utilisation de ce programme est assez simple :
-
-Chaque clic dans la fenêtre permet d'ajouter une forme
-
-La touche Q du clavier permet de quitter le programme
-
-La touche R permet de supprimer toutes les forme présentes dans la fenêtre
+    The use of this program is quite simple:
+    Each click in the window adds a shape
+    The Q key on the keyboard allows you to quit the program
+    The R key allows you to delete all the shapes in the window
 
 # Description 
 
-Chaque clic permet de faire apparaître une forme, les formes se déplacent dans la fenêtre,
-elles rebondissent sur les bords et entre elles, il est possible à n'importe quel moment 
-de quitter le programme ou de réinitialiser toutes les formes
+    Each click makes a shape appear, the shapes move in the window,
+    they bounce on the edges and between them, it is possible at any time to quit the program 
+    to quit the program or to reset all the shapes
